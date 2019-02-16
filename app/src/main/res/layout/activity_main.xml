@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".MainActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="info.androidhive.materialtabs.info.androidhive.UniConductorApp.activity.ScannerActivity">
+
+        <com.dlazaro66.qrcodereaderview.QRCodeReaderView
+            android:id="@+id/qrdecoderview"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <RelativeLayout
+            android:id="@+id/lineRed"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/green_line"
+            app:layout_constraintEnd_toEndOf="@+id/guideline"
+            />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.58" />
+
+        <!--<android.support.constraint.Guideline-->
+        <!--android:id="@+id/horiGuideline"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!--app:layout_constraintGuide_percent="0.5" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/textView2"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:rotation="90"-->
+        <!--android:layout_gravity="center_vertical"-->
+        <!--android:text="Place a barcode under the viewfinder rectangle to scan it"-->
+        <!--android:textColor="#FFF"-->
+        <!--android:shadowColor="#000"-->
+        <!--android:paddingBottom="2dp"-->
+        <!--app:layout_constraintEnd_toStartOf="@+id/guideline"-->
+        <!--app:layout_constraintBottom_toTopOf="@+id/horiGuideline"/>-->
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:visibility="invisible"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:rotation="90"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/qrdecoderview"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/flash"
+            android:layout_marginRight="8dp" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginStart="8dp"
+            android:rotation="90"
+            android:src="@drawable/app_logo"
+            app:layout_constraintBottom_toBottomOf="@+id/lineRed"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/lineRed"
+            android:layout_marginRight="28dp"
+            android:layout_marginLeft="8dp" />
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/overlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:cardElevation="0dp"
+            android:layout_marginStart="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="10dp">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animation_view"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:rotation="90"
+                app:lottie_autoPlay="false"
+                app:lottie_fileName="data.json"
+                app:lottie_loop="true" />
+
+
+        </android.support.v7.widget.CardView>
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.CoordinatorLayout>
