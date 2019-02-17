@@ -22,7 +22,7 @@ import com.dlazaro66.qrcodereaderview.QRCodeReaderView;
 
 import com.example.scanner.R;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements QRCodeReaderView.OnQRCodeReadListener {
 
     private QRCodeReaderView qrCodeReaderView;
     CoordinatorLayout coordinatorLayout;

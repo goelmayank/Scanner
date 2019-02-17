@@ -32,7 +32,7 @@ import com.dlazaro66.qrcodereaderview.QRCodeReaderView;
 import java.util.HashMap;
 import java.util.Map;
 
-public class MainActivity_pot extends AppCompatActivity {
+public class MainActivity_pot extends AppCompatActivity implements QRCodeReaderView.OnQRCodeReadListener {
 
     private QRCodeReaderView qrCodeReaderView;
 
