@@ -90,30 +90,11 @@
                     app:lottie_fileName="data.json"
                     app:lottie_loop="true" />
 
-                <!--<android.support.v7.widget.CardView-->
-                <!--android:id="@+id/overlay2"-->
-                <!--android:layout_width="75dp"-->
-                <!--android:layout_height="200dp"-->
-                <!--android:visibility="invisible"-->
-                <!--android:layout_gravity="center_vertical"-->
-                <!--&gt;-->
-
-                <!--<TextView-->
-                <!--android:id="@+id/result1"-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_gravity="center"-->
-                <!--android:rotation="0"-->
-                <!--android:text="@string/app_name"-->
-                <!--android:textColor="#000" />-->
 
 
             </android.support.v7.widget.CardView>
 
 
-            <!--</android.support.v7.widget.CardView>-->
-
-
         </android.support.constraint.ConstraintLayout>
 
-    </android.support.design.widget.CoordinatorLayout>
+</android.support.design.widget.CoordinatorLayout>
